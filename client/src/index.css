@@ -36,7 +36,13 @@ main {
 .card {
   background-color: transparent !important;
 }
-
+.navbar-nav .nav-link {
+  font-weight: 600;
+  padding: 0 1.2rem !important;
+}
+.active {
+  color: red !important;
+}
 .page-header {
   padding: 1.2rem;
   border-bottom: 1px solid #222;
@@ -50,3 +56,13 @@ footer {
   border-top: 1px solid #222;
   padding: 2rem 0 1rem;
 }
+
+@media (max-width: 767px) {
+  .page-header {
+    flex-direction: column;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem 0 0.5rem;
+  }
+} ;

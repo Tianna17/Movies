@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import CardDetails from "../CardDetails";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import CardDetails from '../CardDetails';
 
 const MovieDetails = ({ match }) => {
   const [movie, setMovie] = useState({});
@@ -12,14 +12,9 @@ const MovieDetails = ({ match }) => {
 
   const fetchMovie = async (movie_id) => {
     const response = await axios.get(
-      `https://api.themoviedb.org/3/movie/${movie_id}`,
-      {
-        params: {
-          language: "en-US",
-          api_key: process.env.REACT_APP_API_KEY,
-        },
-      }
+      `http://localhost:8080/api/v1/movie/${movie_id}`
     );
+
     setMovie(response.data);
   };
 

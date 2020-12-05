@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const NavLink = ({ label, url }) => {
@@ -35,7 +35,7 @@ const Header = () => {
               <NavLink label="Home" url="/" />
               <NavLink label="Movies" url="/movies" />
               <NavLink label="TV Shows" url="/tv-shows" />
-              <NavLink label="People" url="/person" />
+              <NavLink label="Search" url="/search" />
             </ul>
           </div>
         </div>

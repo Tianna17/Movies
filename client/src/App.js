@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
-import { Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Movies from "./components/movies/Movies";
-import MovieDetails from "./components/movies/MovieDetails";
+import React, { Fragment } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Movies from './components/movies/Movies';
+import MovieDetails from './components/movies/MovieDetails';
 
 const App = () => {
   return (
